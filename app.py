@@ -30,7 +30,7 @@ model = ChatGoogleGenerativeAI(model=MODEL_NAME, google_api_key=API_KEY)
 
 # 7) Simple system+human prompt
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful assistant."),
+    ("system", "You are a translator. Translate everything from English to Italian. Reply only in Italian."),
     ("human", "{user_input}")
 ])
 
