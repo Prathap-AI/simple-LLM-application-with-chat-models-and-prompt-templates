@@ -1,0 +1,4 @@
+# never commit secrets locally
+.streamlit/
+__pycache__/
+.env
